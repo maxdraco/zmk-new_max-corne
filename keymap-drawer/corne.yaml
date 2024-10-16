@@ -15,17 +15,17 @@ layers:
   - P
   - {t: '$$mdi:backspace$$', type: backspace}
   - '&screen_shot'
-  - {t: A, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: D, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '&mt A', h: '&mt LCTRL'}
+  - {t: '&mt S', h: '&mt LEFT_ALT'}
+  - {t: '&mt D', h: '&mt LEFT_GUI'}
+  - {t: '&mt F', h: '&mt LEFT_SHIFT'}
   - G
   - $$mdi:arrow-down-bold$$
   - H
-  - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: K, h: RIGHT GUI}
-  - {t: L, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: ;, h: '$$mdi:apple-keyboard-control$$', s: ':'}
+  - {t: '&mt J', h: '&mt RIGHT_SHIFT'}
+  - {t: '&mt K', h: '&mt RIGHT_GUI'}
+  - {t: '&mt L', h: '&mt RIGHT_ALT'}
+  - {t: '&mt SEMI', h: '&mt RCTRL'}
   - {t: '''', s: '"'}
   - $$mdi:apple-keyboard-control$$
   - Z
