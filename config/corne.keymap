@@ -22,13 +22,28 @@
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
         };
 
-        homerow_mods: homerow_mods {
+        hrm_left: hrm_left {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS";
+            label = "HRM_LEFT";
             bindings = <&mt>, <&mt>;
 
             #binding-cells = <2>;
             tapping-term-ms = <1500>;
+            quick-tap-ms = <175>;
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <7 8 9 10 11 12 20 21 22 23 24 25 33 34 35 36 37 38 45 46 44>;
+        };
+
+        hrm_right: hrm_right {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HRM_RIGHT";
+            bindings = <&mt>, <&mt>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <1500>;
+            quick-tap-ms = <175>;
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <0 1 2 3 4 5 13 14 15 16 17 18 26 27 28 29 30 31 40 41 42>;
         };
 
         mmv {
@@ -89,11 +104,11 @@
             //                                                      enter
 
             bindings = <
-&kp TAB       &kp Q        &kp W           &kp E           &kp R             &kp T          &kp UP_ARROW     &kp Y        &kp U              &kp I            &kp O            &kp P           &kp BSPC
-&screen_shot  &mt LCTRL A  &mt LEFT_ALT S  &mt LEFT_GUI D  &mt LEFT_SHIFT F  &kp G          &kp DOWN_ARROW   &kp H        &mt RIGHT_SHIFT J  &mt RIGHT_GUI K  &mt RIGHT_ALT L  &mt RCTRL SEMI  &kp SQT
-&kp LCTRL     &kp Z        &kp X           &kp C           &kp V             &kp B          &kp LEFT_ARROW   &kp N        &kp M              &kp COMMA        &kp DOT          &kp FSLH        &kp ESC
-                           &kp C_MUTE      &kp LGUI        &mo 1             &lt 3 SPACE    &kp RIGHT_ARROW  &lt 3 SPACE  &mo 2              &kp ENTER
-                                                                                            &kp ENTER
+&kp TAB       &kp Q              &kp W                 &kp E                 &kp R                   &kp T          &kp UP_ARROW     &kp Y        &kp U                     &kp I                   &kp O                   &kp P                  &kp BSPC
+&screen_shot  &hrm_left LCTRL A  &hrm_left LEFT_ALT S  &hrm_left LEFT_GUI D  &hrm_left LEFT_SHIFT F  &kp G          &kp DOWN_ARROW   &kp H        &hrm_right RIGHT_SHIFT J  &hrm_right RIGHT_GUI K  &hrm_right RIGHT_ALT L  &hrm_right RCTRL SEMI  &kp SQT
+&kp LCTRL     &kp Z              &kp X                 &kp C                 &kp V                   &kp B          &kp LEFT_ARROW   &kp N        &kp M                     &kp COMMA               &kp DOT                 &kp FSLH               &kp ESC
+                                 &kp C_MUTE            &kp LGUI              &mo 1                   &lt 3 SPACE    &kp RIGHT_ARROW  &lt 3 SPACE  &mo 2                     &kp ENTER
+                                                                                                                    &kp ENTER
             >;
 
             label = "QWERTY";
