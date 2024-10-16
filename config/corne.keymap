@@ -25,7 +25,7 @@
         hrm_left: hrm_left {
             compatible = "zmk,behavior-hold-tap";
             label = "HRM_LEFT";
-            bindings = <&mt>, <&mt>;
+            bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <1500>;
@@ -37,7 +37,7 @@
         hrm_right: hrm_right {
             compatible = "zmk,behavior-hold-tap";
             label = "HRM_RIGHT";
-            bindings = <&mt>, <&mt>;
+            bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <1500>;
