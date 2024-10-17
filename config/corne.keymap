@@ -134,11 +134,15 @@
         launchpad {
             bindings = <&launch_pad>;
             key-positions = <42 44>;
+            timeout-ms = <50>;
+            layers = <0>;
         };
 
         one_pass_vault {
             bindings = <&one_pass_vault>;
             key-positions = <41 45>;
+            layers = <0>;
+            timeout-ms = <50>;
         };
     };
 
