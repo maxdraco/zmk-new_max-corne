@@ -199,5 +199,7 @@ layers:
 combos:
 - p: [42, 44]
   k: '&launch_pad'
+  l: [default]
 - p: [41, 45]
   k: '&one_pass_vault'
+  l: [default]
