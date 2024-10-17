@@ -543,6 +543,18 @@ rect.held, rect.combo.held {
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key enter"/>
 <use href="#mdi:keyboard-return" xlink:href="#mdi:keyboard-return" x="-9" y="-13" height="18" width="18.0" class="key enter tap glyph mdi:keyboard-return"/>
 </g>
+<g class="combo combopos-0">
+<path d="M462,299 l-61,0" class="combo"/>
+<path d="M462,299 l61,0" class="combo"/>
+<rect rx="6" ry="6" x="448" y="286" width="28" height="26" class="combo"/>
+<text x="462" y="299" class="combo tap"><tspan style="font-size: 60%">&amp;launch_p…</tspan></text>
+</g>
+<g class="combo combopos-1">
+<path d="M462,276 l-129,0" class="combo"/>
+<path d="M462,276 l129,0" class="combo"/>
+<rect rx="6" ry="6" x="448" y="263" width="28" height="26" class="combo"/>
+<text x="462" y="276" class="combo tap"><tspan style="font-size: 60%">&amp;one_pass…</tspan></text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 405)" class="layer-lower">
@@ -827,6 +839,18 @@ rect.held, rect.combo.held {
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <use href="#mdi:mouse-left-click-outline" xlink:href="#mdi:mouse-left-click-outline" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:mouse-left-click-outline"/>
 </g>
+<g class="combo combopos-0">
+<path d="M462,299 l-61,0" class="combo"/>
+<path d="M462,299 l61,0" class="combo"/>
+<rect rx="6" ry="6" x="448" y="286" width="28" height="26" class="combo"/>
+<text x="462" y="299" class="combo tap"><tspan style="font-size: 60%">&amp;launch_p…</tspan></text>
+</g>
+<g class="combo combopos-1">
+<path d="M462,276 l-129,0" class="combo"/>
+<path d="M462,276 l129,0" class="combo"/>
+<rect rx="6" ry="6" x="448" y="263" width="28" height="26" class="combo"/>
+<text x="462" y="276" class="combo tap"><tspan style="font-size: 60%">&amp;one_pass…</tspan></text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 811)" class="layer-raise">
@@ -1089,6 +1113,18 @@ rect.held, rect.combo.held {
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <use href="#mdi:mouse-left-click-outline" xlink:href="#mdi:mouse-left-click-outline" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:mouse-left-click-outline"/>
 </g>
+<g class="combo combopos-0">
+<path d="M462,299 l-61,0" class="combo"/>
+<path d="M462,299 l61,0" class="combo"/>
+<rect rx="6" ry="6" x="448" y="286" width="28" height="26" class="combo"/>
+<text x="462" y="299" class="combo tap"><tspan style="font-size: 60%">&amp;launch_p…</tspan></text>
+</g>
+<g class="combo combopos-1">
+<path d="M462,276 l-129,0" class="combo"/>
+<path d="M462,276 l129,0" class="combo"/>
+<rect rx="6" ry="6" x="448" y="263" width="28" height="26" class="combo"/>
+<text x="462" y="276" class="combo tap"><tspan style="font-size: 60%">&amp;one_pass…</tspan></text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 1216)" class="layer-3">
@@ -1343,6 +1379,18 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <use href="#mdi:mouse-left-click-outline" xlink:href="#mdi:mouse-left-click-outline" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:mouse-left-click-outline"/>
+</g>
+<g class="combo combopos-0">
+<path d="M462,299 l-61,0" class="combo"/>
+<path d="M462,299 l61,0" class="combo"/>
+<rect rx="6" ry="6" x="448" y="286" width="28" height="26" class="combo"/>
+<text x="462" y="299" class="combo tap"><tspan style="font-size: 60%">&amp;launch_p…</tspan></text>
+</g>
+<g class="combo combopos-1">
+<path d="M462,276 l-129,0" class="combo"/>
+<path d="M462,276 l129,0" class="combo"/>
+<rect rx="6" ry="6" x="448" y="263" width="28" height="26" class="combo"/>
+<text x="462" y="276" class="combo tap"><tspan style="font-size: 60%">&amp;one_pass…</tspan></text>
 </g>
 </g>
 </g>

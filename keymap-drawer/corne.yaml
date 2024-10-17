@@ -196,3 +196,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
+combos:
+- p: [42, 44]
+  k: '&launch_pad'
+- p: [41, 45]
+  k: '&one_pass_vault'
