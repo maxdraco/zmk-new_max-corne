@@ -79,9 +79,11 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press &kp LCTRL &kp LEFT_GUI &kp Q>,
+                <&macro_press>,
+                <&kp LCTRL &kp LEFT_GUI &kp Q>,
                 <&macro_pause_for_release>,
-                <&macro_release &kp LCTRL &kp LEFT_GUI &kp Q>;
+                <&macro_release>,
+                <&kp LCTRL &kp LEFT_GUI &kp Q>;
 
             label = "LOCK_MAC";
         };
@@ -89,8 +91,40 @@
         screen_shot: screen_shot {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_CONTROL &kp LEFT_SHIFT &kp LEFT_GUI &kp NUMBER_4>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_CONTROL &kp LEFT_SHIFT &kp LEFT_GUI &kp NUMBER_4>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp LCTRL &kp LSHIFT &kp LEFT_GUI &kp NUMBER_4>;
+
             label = "SCREEN_SHOT";
+        };
+
+        launch_pad: launch_pad {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_GUI &kp SPACE>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp LEFT_GUI &kp SPACE>;
+
+            label = "LAUNCH_PAD";
+        };
+
+        one_password_vault: one_password_vault {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_GUI &kp LEFT_SHIFT &kp SPACE>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp LEFT_GUI &kp LEFT_SHIFT &kp SPACE>;
+
+            label = "ONE_PASSWORD_VAULT";
         };
     };
 
