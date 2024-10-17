@@ -114,7 +114,7 @@
             label = "LAUNCH_PAD";
         };
 
-        one_password_vault: one_password_vault {
+        one_pass_vault: one_pass_vault {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -124,7 +124,7 @@
                 <&macro_release>,
                 <&kp LEFT_GUI &kp LEFT_SHIFT &kp SPACE>;
 
-            label = "ONE_PASSWORD_VAULT";
+            label = "ONE_PASS_VAULT";
         };
     };
 
