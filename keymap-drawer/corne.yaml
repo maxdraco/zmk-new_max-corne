@@ -14,7 +14,7 @@ layers:
   - O
   - P
   - {t: '$$mdi:backspace$$', type: backspace}
-  - '&screen_shot'
+  - $$mdi:apple-keyboard-option$$
   - {t: A, h: '$$mdi:apple-keyboard-control$$'}
   - {t: S, h: '$$mdi:apple-keyboard-option$$'}
   - {t: D, h: '$$mdi:apple-keyboard-command$$'}
@@ -202,4 +202,7 @@ combos:
   l: [default]
 - p: [41, 45]
   k: '&one_pass_vault'
+  l: [default]
+- p: [26, 38]
+  k: '&screen_shot'
   l: [default]
