@@ -276,8 +276,8 @@
 
         launchpad {
             bindings = <&launch_pad>;
-            key-positions = <42 44>;
-            timeout-ms = <50>;
+            key-positions = <40 46>;
+            timeout-ms = <500>;
             layers = <0>;
         };
 
@@ -285,20 +285,20 @@
             bindings = <&one_pass_vault>;
             key-positions = <41 45>;
             layers = <0>;
-            timeout-ms = <50>;
+            timeout-ms = <500>;
         };
 
         screen_shot {
             bindings = <&screen_shot>;
             key-positions = <26 38>;
-            timeout-ms = <50>;
+            timeout-ms = <500>;
             layers = <0>;
         };
 
         lock_mac {
             bindings = <&lock_mac>;
             key-positions = <0 1 2>;
-            timeout-ms = <50>;
+            timeout-ms = <500>;
             layers = <0>;
         };
     };
