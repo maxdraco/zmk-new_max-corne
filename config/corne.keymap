@@ -271,6 +271,71 @@
 
             label = "IDEA_STRUCTURE_POPUP";
         };
+
+        highlight_all_left: highlight_all_left {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_GUI &kp LEFT_SHIFT &kp LEFT_ARROW>,
+                <&macro_pause_for_release>,
+                <&macro_press>,
+                <&kp LEFT_GUI &kp LEFT_SHIFT &kp LEFT>;
+
+            label = "HIGHLIGHT_ALL_LEFT";
+        };
+
+        highlight_word_right: highlight_all_right {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT &kp LEFT_SHIFT &kp RIGHT>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp LEFT_ALT &kp LEFT_SHIFT &kp RIGHT>;
+
+            label = "HIGHLIGHT_ALL_RIGHT";
+        };
+
+        highlight_all_right: highlight_word_right {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_GUI &kp LEFT_SHIFT &kp RIGHT>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp LEFT_GUI &kp LEFT_SHIFT &kp RIGHT>;
+
+            label = "HIGHLIGHT_WORD_RIGHT";
+        };
+
+        highlight_word_left: highlight_word_left {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT &kp LEFT_SHIFT &kp LEFT_ARROW>,
+                <&macro_pause_for_release>,
+                <&macro_press>,
+                <&kp LEFT_ALT &kp LEFT_SHIFT &kp LEFT>;
+
+            label = "HIGHLIGHT_WORD_LEFT";
+        };
+
+        evaluate_expression: Evaluate_expression {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT &kp F8>,
+                <&macro_pause_for_release>,
+                <&macro_press>,
+                <&kp LEFT_ALT &kp F8>;
+
+            label = "EVALUATE_EXPRESSION";
+        };
     };
 
     combos {
@@ -340,11 +405,11 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp N1           &kp N2          &kp N3        &kp N4        &kp N5             &mmv MOVE_UP     &kp N6           &kp N7           &kp N8           &kp N9           &kp N0     &kp BSPC
-&trans  &bt BT_CLR_ALL   &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3       &mmv MOVE_DOWN   &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &mac_home  &kp PG_UP
-&trans  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &trans        &trans        &rgb_ug RGB_EFF    &mmv MOVE_LEFT   &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &mac_end   &kp PG_DN
-                         &kp C_MUTE      &trans        &trans        &trans             &mmv MOVE_RIGHT  &kp INS          &kp DEL          &trans
-                                                                                        &mkp LCLK
+&trans          &kp N1           &kp N2          &kp N3        &kp N4        &kp N5             &mmv MOVE_UP     &kp N6           &kp N7           &kp N8           &kp N9           &kp N0     &kp BSPC
+&bt BT_CLR_ALL  &trans           &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3       &mmv MOVE_DOWN   &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &mac_home  &kp PG_UP
+&trans          &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &trans        &trans        &rgb_ug RGB_EFF    &mmv MOVE_LEFT   &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &mac_end   &kp PG_DN
+                                 &kp C_MUTE      &trans        &trans        &trans             &mmv MOVE_RIGHT  &kp INS          &kp DEL          &trans
+                                                                                                &mkp LCLK
             >;
 
             label = "NUMBER";
@@ -388,11 +453,11 @@
 
         layer_4 {
             bindings = <
-&trans  &trans  &trans  &trans     &trans            &idea_terminal    &trans  &trans  &idea_usages  &trans  &trans  &trans  &idea_structure_popup
-&trans  &trans  &trans  &trans     &trans            &trans            &trans  &trans  &trans        &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &mac_copy  &mac_clipy_paste  &trans            &trans  &trans  &trans        &trans  &trans  &trans  &trans
-                &trans  &trans     &trans            &trans            &trans  &trans  &trans        &trans
-                                                                       &trans
+&trans  &trans  &trans  &evaluate_expression  &trans            &idea_terminal    &highlight_all_left    &trans  &idea_usages  &trans  &trans  &trans  &idea_structure_popup
+&trans  &trans  &trans  &trans                &trans            &trans            &highlight_all_right   &trans  &trans        &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &mac_copy             &mac_clipy_paste  &trans            &highlight_word_left   &trans  &trans        &trans  &trans  &trans  &trans
+                &trans  &trans                &trans            &trans            &highlight_word_right  &trans  &trans        &trans
+                                                                                  &trans
             >;
 
             label = "Idea IDE";
