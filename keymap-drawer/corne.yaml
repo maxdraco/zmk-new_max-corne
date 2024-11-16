@@ -1,7 +1,7 @@
 layout: {qmk_keyboard: corne_rotated, layout_name: LAYOUT_split_3x6_3}
 layers:
-  default:
-  - {t: '$$mdi:keyboard-tab$$', h: '4'}
+  QWERTY:
+  - {t: '$$mdi:keyboard-tab$$', h: Idea IDE}
   - Q
   - W
   - E
@@ -42,14 +42,14 @@ layers:
   - $$mdi:keyboard-esc$$
   - $$mdi:volume-off$$
   - LGUI
-  - lower
-  - {t: '$$mdi:keyboard-space$$', h: '3'}
+  - NUMBER
+  - {t: '$$mdi:keyboard-space$$', h: FN}
   - $$mdi:arrow-right-bold$$
-  - {t: '$$mdi:keyboard-space$$', h: '3'}
-  - raise
+  - {t: '$$mdi:keyboard-space$$', h: FN}
+  - SYMBOL
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  lower:
+  NUMBER:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
@@ -63,12 +63,12 @@ layers:
   - {t: '9', s: (}
   - {t: '0', s: )}
   - {t: '$$mdi:backspace$$', type: backspace}
-  - BT CLR ALL
   - {t: '$$mdi:transfer$$', type: trans}
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
   - {h: '3', s: '$$mdi:bluetooth-connect$$'}
   - {h: '4', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '5', s: '$$mdi:bluetooth-connect$$'}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
@@ -98,7 +98,7 @@ layers:
   - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
-  raise:
+  SYMBOL:
   - {t: '$$mdi:transfer$$', type: trans}
   - '!'
   - '@'
@@ -147,7 +147,7 @@ layers:
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
-  '3':
+  FN:
   - {t: '$$mdi:transfer$$', type: trans}
   - F1
   - F2
@@ -196,7 +196,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
-  '4':
+  Idea IDE:
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -248,16 +248,19 @@ layers:
 combos:
 - p: [40, 46]
   k: '&launch_pad'
-  l: [default]
+  l: [QWERTY]
 - p: [41, 45]
   k: '&one_pass_vault'
-  l: [default]
+  l: [QWERTY]
 - p: [26, 38]
   k: '&screen_shot'
-  l: [default]
+  l: [QWERTY]
 - p: [0, 1, 2]
   k: '&lock_mac'
-  l: [default]
+  l: [QWERTY]
 - p: [10, 11, 12]
   k: '&screen_recording'
-  l: [default]
+  l: [QWERTY]
+- p: [17, 16, 15, 14, 21, 22, 23, 24]
+  k: BT CLR ALL
+  l: [NUMBER]
