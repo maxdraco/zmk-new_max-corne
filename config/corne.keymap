@@ -279,7 +279,7 @@
                 <&macro_press>,
                 <&kp LEFT_GUI &kp LEFT_SHIFT &kp LEFT_ARROW>,
                 <&macro_pause_for_release>,
-                <&macro_press>,
+                <&macro_release>,
                 <&kp LEFT_GUI &kp LEFT_SHIFT &kp LEFT>;
 
             label = "HIGHLIGHT_ALL_LEFT";
@@ -318,7 +318,7 @@
                 <&macro_press>,
                 <&kp LEFT_ALT &kp LEFT_SHIFT &kp LEFT>,
                 <&macro_pause_for_release>,
-                <&macro_press>,
+                <&macro_release>,
                 <&kp LEFT_ALT &kp LEFT_SHIFT &kp LEFT>;
 
             label = "HIGHLIGHT_WORD_LEFT";
@@ -331,7 +331,7 @@
                 <&macro_press>,
                 <&kp LEFT_ALT &kp F8>,
                 <&macro_pause_for_release>,
-                <&macro_press>,
+                <&macro_release>,
                 <&kp LEFT_ALT &kp F8>;
 
             label = "EVALUATE_EXPRESSION";
@@ -344,7 +344,7 @@
                 <&macro_press>,
                 <&kp LEFT_ALT &kp LEFT_SHIFT &kp N5>,
                 <&macro_pause_for_release>,
-                <&macro_press>,
+                <&macro_release>,
                 <&kp LEFT_ALT &kp LEFT_SHIFT &kp N5>;
 
             label = "SCREEN_RECORDING";
