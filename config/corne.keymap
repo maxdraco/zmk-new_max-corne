@@ -424,8 +424,8 @@
 
             bindings = <
 &lt 4 TAB     &kp Q              &kp W                 &kp E                 &kp R                   &kp T          &kp UP_ARROW     &kp Y        &kp U                     &kp I                   &kp O                   &kp P                  &kp BSPC
-&kp LEFT_ALT  &hrm_left LCTRL A  &hrm_left LEFT_ALT S  &hrm_left LEFT_GUI D  &hrm_left LEFT_SHIFT F  &kp G          &kp DOWN_ARROW   &kp H        &hrm_right RIGHT_SHIFT J  &hrm_right RIGHT_GUI K  &hrm_right RIGHT_ALT L  &hrm_right RCTRL SEMI  &lt 5 SQT
-&kp LCTRL     &kp Z              &kp X                 &kp C                 &kp V                   &kp B          &kp LEFT_ARROW   &kp N        &kp M                     &kp COMMA               &kp DOT                 &kp FSLH               &kp ESC
+&kp LEFT_ALT  &hrm_left LCTRL A  &hrm_left LEFT_ALT S  &hrm_left LEFT_GUI D  &hrm_left LEFT_SHIFT F  &kp G          &kp DOWN_ARROW   &kp H        &hrm_right RIGHT_SHIFT J  &hrm_right RIGHT_GUI K  &hrm_right RIGHT_ALT L  &hrm_right RCTRL SEMI  &kp SQT
+&kp LCTRL     &lt 5 Z            &kp X                 &kp C                 &kp V                   &kp B          &kp LEFT_ARROW   &kp N        &kp M                     &kp COMMA               &kp DOT                 &kp FSLH               &kp ESC
                                  &kp C_MUTE            &kp LGUI              &mo 1                   &lt 3 SPACE    &kp RIGHT_ARROW  &lt 3 SPACE  &mo 2                     &kp ENTER
                                                                                                                     &kp ENTER
             >;
@@ -444,11 +444,11 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp N1           &kp N2          &kp N3        &kp N4        &kp N5             &mmv MOVE_UP     &kp N6           &kp N7           &kp N8           &kp N9           &kp N0     &kp BSPC
-&trans  &bt BT_SEL 0     &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4       &mmv MOVE_DOWN   &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &mac_home  &kp PG_UP
-&trans  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &trans        &trans        &rgb_ug RGB_EFF    &mmv MOVE_LEFT   &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &mac_end   &kp PG_DN
-                         &kp C_MUTE      &trans        &trans        &trans             &mmv MOVE_RIGHT  &kp INS          &kp DEL          &trans
-                                                                                        &mkp LCLK
+&trans  &kp N1           &kp N2          &kp N3           &kp N4           &kp N5             &mmv MOVE_UP     &kp N6           &kp N7           &kp N8           &kp N9           &kp N0     &kp BSPC
+&trans  &bt BT_SEL 0     &bt BT_SEL 1    &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4       &mmv MOVE_DOWN   &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &mac_home  &kp PG_UP
+&trans  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_HUI  &rgb_ug RGB_HUD  &rgb_ug RGB_EFF    &mmv MOVE_LEFT   &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &mac_end   &kp PG_DN
+                         &kp C_MUTE      &trans           &trans           &trans             &mmv MOVE_RIGHT  &kp INS          &kp DEL          &trans
+                                                                                              &mkp LCLK
             >;
 
             label = "NUMBER";
@@ -504,10 +504,10 @@
 
         layer_5 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp N7  &kp N8  &kp N9  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp N4  &kp N5  &kp N6  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp N1  &kp N2  &kp N3  &trans  &trans
-                &trans  &trans  &trans  &trans    &trans  &trans  &kp N0  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp STAR   &kp N7  &kp N8  &kp N9  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp PLUS   &kp N4  &kp N5  &kp N6  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp SLASH  &kp N1  &kp N2  &kp N3  &trans  &trans
+                &trans  &trans  &trans  &trans    &trans  &kp EQUAL  &kp N0  &trans
                                                   &trans
             >;
 
