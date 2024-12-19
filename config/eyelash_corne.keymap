@@ -1,26 +1,32 @@
-#include <behaviors/mouse_keys.dtsi>
-#include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/outputs.h>
-#include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
+
+#include <input/processors.dtsi>
+
+/*
+
+   &mmv_input_listener {
+       input-processors = <&zip_xy_scaler 2 1>;
+   };
+
+   &msc_input_listener {
+       input-processors = <&zip_xy_scaler 2 1>;
+   };
+
+ */
 
 #define ZMK_MOUSE_DEFAULT_MOVE_VAL 1200  // 600
 #define ZMK_MOUSE_DEFAULT_SCRL_VAL 20    // 10
-#define U_MS_U &mmv MOVE_UP
-#define U_MS_D &mmv MOVE_DOWN
-#define U_MS_L &mmv MOVE_LEFT
-#define U_MS_R &mmv MOVE_RIGHT
 
 / {
     behaviors {
         td0: td0 {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD0";
+            display-name = "Shift/Caps Lock Tap Dance";
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
         };
@@ -75,7 +81,6 @@
         compatible = "zmk,behavior-sensor-rotate";
         #sensor-binding-cells = <0>;
         bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-
         tap-ms = <30>;
     };
 
@@ -466,9 +471,9 @@
 
             bindings = <
 &trans  &kp EXCL      &kp AT        &kp HASH   &kp DLLR   &kp PRCNT    &mmv MOVE_UP     &kp CARET  &kp AMPS   &kp ASTRK             &kp LEFT_BRACKET       &kp RIGHT_BRACKET  &kp BSPC
-&trans  &trans        &mkp LCLK     &mkp MCLK  &mkp RCLK  &mkp MB4     &mmv MOVE_DOWN   &kp MINUS  &kp EQUAL  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BSLH           &kp GRAVE
-&trans  &out OUT_USB  &out OUT_BLE  &none      &none      &mkp MB5     &mmv MOVE_LEFT   &kp UNDER  &kp PLUS   &kp LBRC              &kp RBRC               &kp PIPE           &kp TILDE
-                      &trans        &trans     &trans     &kp SPACE    &mmv MOVE_RIGHT  &kp RET    &trans     &trans
+&trans  &trans        &mkp LCLK     &mkp MCLK  &mkp RCLK  &mkp MB4     &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT &kp MINUS  &kp EQUAL  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BSLH           &kp GRAVE
+&trans  &out OUT_USB  &out OUT_BLE  &none      &none      &mkp MB5     &trans                    &mmv MOVE_DOWN                   &kp UNDER  &kp PLUS   &kp LBRC              &kp RBRC               &kp PIPE           &kp TILDE
+                      &trans        &trans     &trans     &kp SPACE                                                            &kp RET    &trans     &trans
                                                                        &mkp LCLK
             >;
 
@@ -480,9 +485,9 @@
             display-name = "Fn";
             bindings = <
 &trans  &kp F1      &kp F2            &kp F3       &kp F4     &kp F5      &idea_next_code      &kp F6       &kp F7     &kp F8       &kp F9      &kp F10          &kp F11
-&trans  &trans      &mkp LCLK         &mkp MCLK    &mkp RCLK  &mkp MB4    &idea_previous_code  &bootloader  &mkp LCLK  &mkp MCLK    &mkp RCLK   &kp PRINTSCREEN  &kp F12
-&trans  &sys_reset  &trans            &bootloader  &trans     &mkp MB5    &mac_skip_left       &trans       &trans     &bootloader  &sys_reset  &kp SCROLLLOCK   &kp PAUSE_BREAK
-                    &kp C_PLAY_PAUSE  &trans       &trans     &trans      &mac_skip_right      &trans       &trans     &trans
+&trans  &trans      &mkp LCLK         &mkp MCLK    &mkp RCLK  &mkp MB4    &idea_previous_code  &mac_skip_left &mac_skip_right &bootloader  &mkp LCLK  &mkp MCLK    &mkp RCLK   &kp PRINTSCREEN  &kp F12
+&trans  &sys_reset  &trans            &bootloader  &trans     &mkp MB5    &trans       &trans       &trans     &bootloader  &sys_reset  &kp SCROLLLOCK   &kp PAUSE_BREAK
+                    &kp C_PLAY_PAUSE  &trans       &trans     &trans                                                                   &trans       &trans     &trans
                                                                           &mkp LCLK
             >;
 
