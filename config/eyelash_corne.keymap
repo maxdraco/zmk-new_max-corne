@@ -1,11 +1,13 @@
+#include <dt-bindings/zmk/mouse.h>
+#include <input/processors.dtsi>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
-
-#include <input/processors.dtsi>
 
 /*
 
@@ -456,7 +458,7 @@
             >;
 
             label = "NUMBER";
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&inc_dec_kp C_NEXT C_PREV>;
         };
 
         raise_layer {
@@ -494,10 +496,10 @@
 
         layer_4 {
             bindings = <
-&trans  &trans     &trans            &evaluate_expression  &trans                 &idea_terminal                                  &highlight_all_left          &trans  &idea_usages  &trans  &trans  &trans  &idea_structure_popup
-&trans  &trans     &trans            &trans                &trans                 &trans                    &highlight_all_right  &trans               &trans  &trans  &trans        &trans  &trans  &trans  &trans
-&trans  &mac_copy  &mac_clipy_paste  &trans                &highlight_word_left   &trans          &trans                          &trans                       &trans  &trans        &trans  &trans  &trans  &trans
-                                     &trans                &highlight_word_right  &trans                                                                       &trans  &trans        &trans
+&trans  &trans  &trans  &evaluate_expression  &trans            &idea_terminal                                  &highlight_all_left          &trans  &idea_usages  &trans  &trans  &trans  &idea_structure_popup
+&trans  &trans  &trans  &trans                &trans            &trans                    &highlight_all_right  &trans               &trans  &trans  &trans        &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &mac_copy             &mac_clipy_paste  &trans          &trans                          &trans                       &trans  &trans        &trans  &trans  &trans  &trans
+                        &trans                &trans            &trans                                                                       &trans  &trans        &trans
             >;
 
             label = "Idea IDE";
@@ -507,8 +509,8 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans          &kp STAR   &kp N7        &kp N8        &kp N9        &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &kp PLUS   &kp N4        &kp N5        &kp N6        &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &kp SLASH  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans
-                        &trans  &trans  &trans                                    &trans     &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &kp MINUS  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans
+                        &trans  &trans  &trans                                    &kp EQUAL  &kp SLASH     &trans
             >;
 
             label = "Num-pad";
