@@ -88,9 +88,9 @@ layers:
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - RGB EFR
   - RGB SPI
+  - RGB SPD
   - RGB BRI
   - RGB BRD
-  - '&mac_end'
   - PG DN
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
