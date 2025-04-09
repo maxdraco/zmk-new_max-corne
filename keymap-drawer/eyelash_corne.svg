@@ -559,22 +559,22 @@ rect.held, rect.combo.held {
 <use href="#mdi:keyboard-return" xlink:href="#mdi:keyboard-return" x="-9" y="-13" height="18" width="18.0" class="key enter tap glyph mdi:keyboard-return"/>
 </g>
 <g class="combo combopos-0">
-<path d="M795,185 l82,-20" class="combo"/>
-<path d="M795,185 l-82,20" class="combo"/>
-<rect rx="6" ry="6" x="781" y="172" width="28" height="26" class="combo"/>
-<text x="795" y="185" class="combo tap"><tspan style="font-size: 60%">&amp;launch_p…</tspan></text>
+<path d="M490,225 l-123,0" class="combo"/>
+<path d="M490,225 l123,0" class="combo"/>
+<rect rx="6" ry="6" x="476" y="212" width="28" height="26" class="combo"/>
+<text x="490" y="225" class="combo tap"><tspan style="font-size: 60%">&amp;launch_p…</tspan></text>
 </g>
 <g class="combo combopos-1">
-<path d="M792,193 l142,-28" class="combo"/>
-<path d="M792,193 l-142,28" class="combo"/>
-<rect rx="6" ry="6" x="778" y="180" width="28" height="26" class="combo"/>
-<text x="792" y="193" class="combo tap"><tspan style="font-size: 60%">&amp;one_pass…</tspan></text>
+<path d="M490,209 l-186,0" class="combo"/>
+<path d="M490,209 l186,0" class="combo"/>
+<rect rx="6" ry="6" x="476" y="196" width="28" height="26" class="combo"/>
+<text x="490" y="209" class="combo tap"><tspan style="font-size: 60%">&amp;one_pass…</tspan></text>
 </g>
 <g class="combo combopos-2">
-<path d="M840,122 l38,-12" class="combo"/>
-<path d="M840,122 l-38,12" class="combo"/>
-<rect rx="6" ry="6" x="826" y="109" width="28" height="26" class="combo"/>
-<text x="840" y="122" class="combo tap"><tspan style="font-size: 60%">&amp;screen_s…</tspan></text>
+<path d="M490,161 l443,0" class="combo"/>
+<path d="M490,161 l-443,0" class="combo"/>
+<rect rx="6" ry="6" x="476" y="148" width="28" height="26" class="combo"/>
+<text x="490" y="161" class="combo tap"><tspan style="font-size: 60%">&amp;screen_s…</tspan></text>
 </g>
 <g class="combo combopos-3">
 <path d="M84,44 l-37,3" class="combo"/>
@@ -589,10 +589,10 @@ rect.held, rect.combo.held {
 <text x="840" y="37" class="combo tap"><tspan style="font-size: 60%">&amp;screen_r…</tspan></text>
 </g>
 <g class="combo combopos-5">
-<path d="M427,94 l-156,-3" class="combo"/>
-<path d="M427,94 l156,3" class="combo"/>
-<rect rx="6" ry="6" x="413" y="81" width="28" height="26" class="combo"/>
-<use href="#mdi:alpha-w-box" xlink:href="#mdi:alpha-w-box" x="418" y="85" height="18" width="18.0" class="combo tap glyph mdi:alpha-w-box"/>
+<path d="M490,91 l-219,0" class="combo"/>
+<path d="M490,91 l219,0" class="combo"/>
+<rect rx="6" ry="6" x="476" y="78" width="28" height="26" class="combo"/>
+<use href="#mdi:alpha-w-box" xlink:href="#mdi:alpha-w-box" x="481" y="82" height="18" width="18.0" class="combo tap glyph mdi:alpha-w-box"/>
 </g>
 </g>
 </g>
@@ -882,17 +882,17 @@ rect.held, rect.combo.held {
 <use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-9" y="-13" height="18" width="18.0" class="key trans tap glyph mdi:transfer"/>
 </g>
 <g class="combo combopos-0">
-<path d="M432,92 l-162,-2" class="combo"/>
-<path d="M432,92 l-218,-8" class="combo"/>
-<path d="M432,92 l-274,-2" class="combo"/>
-<path d="M432,92 l-330,12" class="combo"/>
-<path d="M432,92 l151,4" class="combo"/>
-<path d="M432,92 l221,5" class="combo"/>
-<path d="M432,92 l277,-2" class="combo"/>
-<path d="M432,92 l333,-8" class="combo"/>
-<rect rx="6" ry="6" x="418" y="79" width="28" height="26" class="combo"/>
-<text x="432" y="92" class="combo tap">
-<tspan x="432" dy="-0.6em">BT</tspan><tspan x="432" dy="1.2em">…</tspan>
+<path d="M490,37 l-387,12" class="combo"/>
+<path d="M490,37 l-275,-8" class="combo"/>
+<path d="M490,37 l-331,-2" class="combo"/>
+<path d="M490,37 l-219,-2" class="combo"/>
+<path d="M490,37 l219,-2" class="combo"/>
+<path d="M490,37 l275,-8" class="combo"/>
+<path d="M490,37 l331,-2" class="combo"/>
+<path d="M490,37 l387,12" class="combo"/>
+<rect rx="6" ry="6" x="476" y="24" width="28" height="26" class="combo"/>
+<text x="490" y="37" class="combo tap">
+<tspan x="490" dy="-0.6em">BT</tspan><tspan x="490" dy="1.2em">…</tspan>
 </text>
 </g>
 </g>
