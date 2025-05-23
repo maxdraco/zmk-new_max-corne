@@ -297,7 +297,7 @@
                                           &trans         &trans         &trans                                           &kp EQUAL  &kp FSLH      &kp N0
             >;
 
-            label = "Num-pad";
+            label = "Num Pad";
         };
     };
 };
