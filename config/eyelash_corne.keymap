@@ -74,6 +74,125 @@
         tap-ms = <100>;
     };
 
+    macros {
+        lock_mac: lock_mac {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp LGUI &kp Q>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp LCTRL &kp LGUI &kp Q>;
+
+            label = "LOCK_MAC";
+        };
+
+        screen_shot: screen_shot {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp LSHIFT &kp LGUI &kp NUMBER_4>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp LCTRL &kp LSHIFT &kp LGUI &kp NUMBER_4>;
+
+            label = "SCREEN_SHOT";
+        };
+
+        launch_pad: launch_pad {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LGUI &kp SPACE>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp LGUI &kp SPACE>;
+
+            label = "LAUNCH_PAD";
+        };
+
+        one_p_vault: one_p_vault {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LGUI &kp LSHFT &kp SPACE>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp LGUI &kp LSHIFT &kp SPACE>;
+
+            label = "ONE_P_VAULT";
+        };
+
+        mac_home: mac_home {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LGUI &kp LEFT>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp LGUI &kp LEFT_ARROW>;
+
+            label = "MAC_HOME";
+        };
+
+        mac_end: mac_end {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LGUI &kp RIGHT>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp LGUI &kp RIGHT>;
+
+            label = "MAC_END";
+        };
+
+        screen_recording: screen_recording {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp LSHIFT &kp LGUI &kp N5>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp LCTRL &kp LSHIFT &kp LGUI &kp N5>;
+
+            label = "SCREEN_RECORDING";
+        };
+
+        idea_terminal: idea_terminal {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT &kp F12>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp LALT &kp F12>;
+
+            label = "IDEA_TERMINAL";
+        };
+
+        mac_clipy_paste: mac_clipy_paste {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LGUI &kp LS(V)>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp LGUI &kp LS(V)>;
+
+            label = "MAC_CLIPY_PASTE";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
