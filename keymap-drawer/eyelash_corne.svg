@@ -456,8 +456,8 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">Z</text>
-<a href="#Num-pad">
-<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 86%">Num-pad</tspan></text>
+<a href="#Num-Pad">
+<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 86%">Num Pad</tspan></text>
 </a></g>
 <g transform="translate(140, 147)" class="key keypos-30">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -1822,8 +1822,8 @@ rect.held, rect.combo.held {
 </g>
 </g>
 </g>
-<g transform="translate(40, 1592)" class="layer-Num-pad">
-<text x="0" y="28" class="label" id="Num-pad">Num-pad:</text>
+<g transform="translate(40, 1592)" class="layer-Num Pad">
+<text x="0" y="28" class="label" id="Num-Pad">Num Pad:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 49)" class="key trans keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
