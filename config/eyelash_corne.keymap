@@ -239,10 +239,10 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&lt 4 TAB  &kp Q              &kp W             &kp E             &kp R               &kp T                               &kp UP                &kp Y        &kp U                &kp I              &kp O              &kp P                  &kp BSPC
-&kp LALT   &hrm_left LCTRL A  &hrm_left LALT S  &hrm_left LGUI D  &hrm_left LSHIFT F  &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &hrm_right RSHIFT J  &hrm_right RGUI K  &hrm_right RALT L  &hrm_right RCTRL SEMI  &kp SQT
-&kp LCTRL  &lt 5 Z            &kp X             &kp C             &kp V               &kp B        &kp SPACE              &kp DOWN              &kp N        &kp M                &kp COMMA          &kp DOT            &kp FSLH               &kp ESC
-                                                &kp LGUI          &mo 1               &lt 3 SPACE                                               &lt 3 SPACE  &mo 2                &kp ENTER
+&lt 4 TAB  &kp Q              &kp W             &kp E             &kp R               &kp T                                &kp UP                &kp Y        &kp U                &kp I              &kp O              &kp P                  &kp BSPC
+&kp LALT   &hrm_left LCTRL A  &hrm_left LALT S  &hrm_left LGUI D  &hrm_left LSHIFT F  &kp G                      &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &hrm_right RSHIFT J  &hrm_right RGUI K  &hrm_right RALT L  &hrm_right RCTRL SEMI  &kp SQT
+&kp LCTRL  &lt 5 Z            &kp X             &kp C             &kp V               &kp B        &kp C_MUTE              &kp DOWN              &kp N        &kp M                &kp COMMA          &kp DOT            &kp FSLH               &kp ESC
+                                                &kp LGUI          &mo 1               &lt 3 SPACE                                                &lt 3 SPACE  &mo 2                &kp ENTER
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
