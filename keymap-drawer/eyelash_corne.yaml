@@ -297,13 +297,19 @@ layers:
 combos:
 - p: [43, 46]
   k: '&one_p_vault'
+  l: [QWERTY]
 - p: [28, 41]
   k: '&screen_shot'
+  l: [QWERTY]
 - p: [13, 27]
   k: '&screen_recording'
-- p: [17, 23]
+  l: [QWERTY]
+- p: [8, 4]
   k: $$mdi:apple-keyboard-caps$$
+  l: [QWERTY]
 - p: [0, 1, 2]
   k: '&lock_mac'
+  l: [QWERTY]
 - p: [1, 2, 3, 4, 8, 9, 10, 11]
   k: BT CLR ALL
+  l: [QWERTY]
