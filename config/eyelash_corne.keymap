@@ -199,31 +199,37 @@
         one_p_vault {
             bindings = <&one_p_vault>;
             key-positions = <43 46>;
+            layers = <0>;
         };
 
         screen_shot {
             bindings = <&screen_shot>;
             key-positions = <28 41>;
+            layers = <0>;
         };
 
         screen_recording {
             bindings = <&screen_recording>;
             key-positions = <13 27>;
+            layers = <0>;
         };
 
         caps {
             bindings = <&kp CAPSLOCK>;
-            key-positions = <17 23>;
+            key-positions = <8 4>;
+            layers = <0>;
         };
 
         lock_mac {
             bindings = <&lock_mac>;
             key-positions = <0 1 2>;
+            layers = <0>;
         };
 
         clear_bt_profiles {
             bindings = <&bt BT_CLR_ALL>;
             key-positions = <1 2 3 4 8 9 10 11>;
+            layers = <0>;
         };
     };
 
