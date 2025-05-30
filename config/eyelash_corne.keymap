@@ -45,6 +45,7 @@
             quick-tap-ms = <175>;
             hold-trigger-key-positions = <1 0 13 28 29 14 15 2 3 4 5 18 33 44 43 42 32 17 16 31 30>;
             hold-trigger-on-release;
+            flavor = "tap-preferred";
         };
 
         hrm_right: hrm_right {
@@ -57,6 +58,7 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <175>;
             hold-trigger-on-release;
+            flavor = "tap-preferred";
         };
     };
 
