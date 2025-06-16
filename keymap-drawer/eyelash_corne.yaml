@@ -313,3 +313,5 @@ combos:
 - p: [1, 2, 3, 4, 8, 9, 10, 11]
   k: BT CLR ALL
   l: [QWERTY]
+- p: [0, 12]
+  k: '&screenshot_whole_screen'
