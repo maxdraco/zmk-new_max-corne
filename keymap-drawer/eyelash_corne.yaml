@@ -84,7 +84,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - RGB EFF
-  - Ctl+PLAY PAUSE
+  - PLAY PAUSE
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - RGB EFR
   - RGB SPI
