@@ -295,6 +295,8 @@ layers:
   - {t: /, s: '?'}
   - {t: '0', s: )}
 combos:
+- p: [1, 15, 29]
+  k: '&soft_off'
 - p: [43, 46]
   k: '&one_p_vault'
   l: [QWERTY]
@@ -315,5 +317,3 @@ combos:
   l: [QWERTY]
 - p: [0, 12]
   k: '&screenshot_whole_screen'
-- p: [1, 15, 29]
-  k: '&soft_off'
