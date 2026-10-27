@@ -36,6 +36,19 @@
             tap-ms = <0>;
         };
 
+        kprgb: kprgb {
+            compatible = "keypaw,behavior-rgb-matrix";
+            #binding-cells = <2>;
+            initial-effect = <0>;
+
+            // QWERTY stays dark; the layer overlays below do the lighting
+            fx_off: fx_off {
+                compatible = "keypaw,rgb-matrix-solid";
+                #binding-cells = <0>;
+                color = <0x000000>;
+            };
+        };
+
         hrm_left: hrm_left {
             compatible = "zmk,behavior-hold-tap";
             label = "HRM_LEFT";
@@ -245,6 +258,129 @@
         };
     };
 
+    rgb_conditions: rgb_conditions {
+        compatible = "keypaw,rgb-conditions";
+
+        cond_number: cond_number {
+            compatible = "keypaw,rgb-condition-layer";
+            layer = <1>;
+            only-topmost;
+        };
+
+        cond_symbol: cond_symbol {
+            compatible = "keypaw,rgb-condition-layer";
+            layer = <2>;
+            only-topmost;
+        };
+
+        cond_fn: cond_fn {
+            compatible = "keypaw,rgb-condition-layer";
+            layer = <3>;
+            only-topmost;
+        };
+
+        cond_ide: cond_ide {
+            compatible = "keypaw,rgb-condition-layer";
+            layer = <4>;
+            only-topmost;
+        };
+
+        cond_numpad: cond_numpad {
+            compatible = "keypaw,rgb-condition-layer";
+            layer = <5>;
+            only-topmost;
+        };
+    };
+
+    // Light the keys that have something assigned on the active layer
+    rgb_overlays: rgb_overlays {
+        compatible = "keypaw,rgb-overlays";
+
+        layer_number: layer_number {
+            compatible = "keypaw,rgb-overlay";
+            condition = <&cond_number>;
+            keys = <1 2 3 4 5 7 8 9 10 11 12 14 15 16 17 18 22 23 24 25 26 27 29 30 31 32 33 36 37 38 39 40 41 42 44 45 46 47>;
+
+            fx_number {
+                compatible = "keypaw,rgb-matrix-solid";
+                #binding-cells = <0>;
+                color = <0x00AAFF>;
+            };
+        };
+
+        layer_symbol: layer_symbol {
+            compatible = "keypaw,rgb-overlay";
+            condition = <&cond_symbol>;
+            keys = <1 2 3 4 5 7 8 9 10 11 12 15 16 17 18 22 23 24 25 26 27 29 30 33 36 37 38 39 40 41 44 45>;
+
+            fx_symbol {
+                compatible = "keypaw,rgb-matrix-solid";
+                #binding-cells = <0>;
+                color = <0xAA00FF>;
+            };
+        };
+
+        layer_fn: layer_fn {
+            compatible = "keypaw,rgb-overlay";
+            condition = <&cond_fn>;
+            keys = <0 1 2 3 4 5 7 8 9 10 11 12 15 16 17 18 22 23 24 25 26 27 29 31 33 38 39 40 41>;
+
+            fx_fn {
+                compatible = "keypaw,rgb-matrix-solid";
+                #binding-cells = <0>;
+                color = <0xFFFFFF>;
+            };
+        };
+
+        layer_ide: layer_ide {
+            compatible = "keypaw,rgb-overlay";
+            condition = <&cond_ide>;
+            keys = <5 32>;
+
+            fx_ide {
+                compatible = "keypaw,rgb-matrix-solid";
+                #binding-cells = <0>;
+                color = <0xFF8000>;
+            };
+        };
+
+        layer_numpad: layer_numpad {
+            compatible = "keypaw,rgb-overlay";
+            condition = <&cond_numpad>;
+            keys = <7 8 9 10 22 23 24 25 36 37 38 39 45 46 47>;
+
+            fx_numpad {
+                compatible = "keypaw,rgb-matrix-solid";
+                #binding-cells = <0>;
+                color = <0x00FF40>;
+            };
+        };
+
+        layer_numpad_bt: layer_numpad_bt {
+            compatible = "keypaw,rgb-overlay";
+            condition = <&cond_numpad>;
+            keys = <14 15 16 17 18>;
+
+            fx_numpad_bt {
+                compatible = "keypaw,rgb-matrix-solid";
+                #binding-cells = <0>;
+                color = <0x0040FF>;
+            };
+        };
+
+        layer_numpad_bt_clr: layer_numpad_bt_clr {
+            compatible = "keypaw,rgb-overlay";
+            condition = <&cond_numpad>;
+            keys = <13>;
+
+            fx_numpad_bt_clr {
+                compatible = "keypaw,rgb-matrix-solid";
+                #binding-cells = <0>;
+                color = <0xFF0000>;
+            };
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -265,8 +401,8 @@
             bindings = <
 &trans  &kp N1           &kp N2          &kp N3           &kp N4           &kp N5                                               &mmv MOVE_UP                     &kp N6           &kp N7           &kp N8           &kp N9           &kp N0    &kp BSPC
 &trans  &bt BT_SEL 0     &bt BT_SEL 1    &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4                         &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &kp HOME  &kp PG_UP
-&trans  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_HUI  &rgb_ug RGB_HUD  &rgb_ug RGB_EFF  &kp C_PLAY_PAUSE                    &mmv MOVE_DOWN                   &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp END   &kp PG_DN
-                                         &rgb_ug RGB_SAD  &trans           &rgb_ug RGB_SAI                                                                       &kp INS          &kp DEL          &rgb_ug RGB_SPD
+&trans  &kprgb RGB_OFF  &kprgb RGB_ON  &kprgb RGB_HUI  &kprgb RGB_HUD  &kprgb RGB_EFF  &kp C_PLAY_PAUSE                    &mmv MOVE_DOWN                   &kprgb RGB_EFR  &kprgb RGB_SPI  &kprgb RGB_BRI  &kprgb RGB_BRD  &kp END   &kp PG_DN
+                                         &kprgb RGB_SAD  &trans           &kprgb RGB_SAI                                                                       &kp INS          &kp DEL          &kprgb RGB_SPD
             >;
 
             sensor-bindings = <&inc_dec_kp C_NEXT C_PREV>;

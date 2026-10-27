@@ -1,0 +1,11 @@
+/ {
+    // LED chain order -> key position. Assumes the stock Corne per-key chain
+    // (inner thumb first, snaking outward by column); fix here if a press
+    // lights the wrong LED.
+    rgb_matrix: rgb-matrix {
+        compatible = "keypaw,rgb-matrix";
+        strip = <&led_strip>;
+        physical-layout = <&default_layout>;
+        mapping = <45 36 22 7 8 23 37 46 47 38 24 9 10 25 39 40 26 11 12 27 41>;
+    };
+};
