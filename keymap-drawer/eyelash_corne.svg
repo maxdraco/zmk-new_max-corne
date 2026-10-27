@@ -787,35 +787,35 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-0.6em">RGB</tspan><tspan x="0" dy="1.2em">OFF</tspan>
+<tspan x="0" dy="-0.6em" style="font-size: 86%">&amp;kprgb</tspan><tspan x="0" dy="1.2em" style="font-size: 86%">RGB_OFF</tspan>
 </text>
 </g>
 <g transform="translate(140, 147)" class="key keypos-30">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-0.6em">RGB</tspan><tspan x="0" dy="1.2em">ON</tspan>
+<tspan x="0" dy="-0.6em">&amp;kprgb</tspan><tspan x="0" dy="1.2em">RGB_ON</tspan>
 </text>
 </g>
 <g transform="translate(196, 140)" class="key keypos-31">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-0.6em">RGB</tspan><tspan x="0" dy="1.2em">HUI</tspan>
+<tspan x="0" dy="-0.6em" style="font-size: 86%">&amp;kprgb</tspan><tspan x="0" dy="1.2em" style="font-size: 86%">RGB_HUI</tspan>
 </text>
 </g>
 <g transform="translate(252, 147)" class="key keypos-32">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-0.6em">RGB</tspan><tspan x="0" dy="1.2em">HUD</tspan>
+<tspan x="0" dy="-0.6em" style="font-size: 86%">&amp;kprgb</tspan><tspan x="0" dy="1.2em" style="font-size: 86%">RGB_HUD</tspan>
 </text>
 </g>
 <g transform="translate(308, 153)" class="key keypos-33">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-0.6em">RGB</tspan><tspan x="0" dy="1.2em">EFF</tspan>
+<tspan x="0" dy="-0.6em" style="font-size: 86%">&amp;kprgb</tspan><tspan x="0" dy="1.2em" style="font-size: 86%">RGB_EFF</tspan>
 </text>
 </g>
 <g transform="translate(378, 153)" class="key keypos-34">
@@ -835,28 +835,28 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-0.6em">RGB</tspan><tspan x="0" dy="1.2em">EFR</tspan>
+<tspan x="0" dy="-0.6em" style="font-size: 86%">&amp;kprgb</tspan><tspan x="0" dy="1.2em" style="font-size: 86%">RGB_EFR</tspan>
 </text>
 </g>
 <g transform="translate(728, 147)" class="key keypos-37">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-0.6em">RGB</tspan><tspan x="0" dy="1.2em">SPI</tspan>
+<tspan x="0" dy="-0.6em" style="font-size: 86%">&amp;kprgb</tspan><tspan x="0" dy="1.2em" style="font-size: 86%">RGB_SPI</tspan>
 </text>
 </g>
 <g transform="translate(784, 140)" class="key keypos-38">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-0.6em">RGB</tspan><tspan x="0" dy="1.2em">BRI</tspan>
+<tspan x="0" dy="-0.6em" style="font-size: 86%">&amp;kprgb</tspan><tspan x="0" dy="1.2em" style="font-size: 86%">RGB_BRI</tspan>
 </text>
 </g>
 <g transform="translate(840, 147)" class="key keypos-39">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-0.6em">RGB</tspan><tspan x="0" dy="1.2em">BRD</tspan>
+<tspan x="0" dy="-0.6em" style="font-size: 86%">&amp;kprgb</tspan><tspan x="0" dy="1.2em" style="font-size: 86%">RGB_BRD</tspan>
 </text>
 </g>
 <g transform="translate(896, 161)" class="key keypos-40">
@@ -875,7 +875,7 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-0.6em">RGB</tspan><tspan x="0" dy="1.2em">SAD</tspan>
+<tspan x="0" dy="-0.6em" style="font-size: 86%">&amp;kprgb</tspan><tspan x="0" dy="1.2em" style="font-size: 86%">RGB_SAD</tspan>
 </text>
 </g>
 <g transform="translate(285, 209) rotate(12.0)" class="key held keypos-43">
@@ -886,7 +886,7 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-0.6em">RGB</tspan><tspan x="0" dy="1.2em">SAI</tspan>
+<tspan x="0" dy="-0.6em" style="font-size: 86%">&amp;kprgb</tspan><tspan x="0" dy="1.2em" style="font-size: 86%">RGB_SAI</tspan>
 </text>
 </g>
 <g transform="translate(632, 224) rotate(-24.0)" class="key keypos-45">
@@ -903,7 +903,7 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-0.6em">RGB</tspan><tspan x="0" dy="1.2em">SPD</tspan>
+<tspan x="0" dy="-0.6em" style="font-size: 86%">&amp;kprgb</tspan><tspan x="0" dy="1.2em" style="font-size: 86%">RGB_SPD</tspan>
 </text>
 </g>
 <g class="combo combopos-0">
@@ -1195,10 +1195,10 @@ rect.held, rect.combo.held {
 <g transform="translate(40, 955)" class="layer-Fn">
 <text x="0" y="28" class="label" id="Fn">Fn:</text>
 <g transform="translate(0, 56)">
-<g transform="translate(28, 49)" class="key keypos-0">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
-<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="-4" class="key tap"><tspan style="font-size: 60%">&amp;studio_u…</tspan></text>
+<g transform="translate(28, 49)" class="key none keypos-0">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none side"/>
+<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key none"/>
+<use href="#mdi:minus-circle-outline" xlink:href="#mdi:minus-circle-outline" x="-9" y="-13" height="18" width="18.0" class="key none tap glyph mdi:minus-circle-outline"/>
 </g>
 <g transform="translate(84, 49)" class="key keypos-1">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>

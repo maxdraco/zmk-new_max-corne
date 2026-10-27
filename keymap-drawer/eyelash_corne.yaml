@@ -79,25 +79,25 @@ layers:
   - HOME
   - PG UP
   - {t: '$$mdi:transfer$$', type: trans}
-  - RGB OFF
-  - RGB ON
-  - RGB HUI
-  - RGB HUD
-  - RGB EFF
+  - '&kprgb RGB_OFF'
+  - '&kprgb RGB_ON'
+  - '&kprgb RGB_HUI'
+  - '&kprgb RGB_HUD'
+  - '&kprgb RGB_EFF'
   - PLAY PAUSE
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - RGB EFR
-  - RGB SPI
-  - RGB BRI
-  - RGB BRD
+  - '&kprgb RGB_EFR'
+  - '&kprgb RGB_SPI'
+  - '&kprgb RGB_BRI'
+  - '&kprgb RGB_BRD'
   - END
   - PG DN
-  - RGB SAD
+  - '&kprgb RGB_SAD'
   - {type: held}
-  - RGB SAI
+  - '&kprgb RGB_SAI'
   - INS
   - $$mdi:backspace-reverse-outline$$
-  - RGB SPD
+  - '&kprgb RGB_SPD'
   SYMBOL:
   - {t: '$$mdi:transfer$$', type: trans}
   - '!'
@@ -148,7 +148,7 @@ layers:
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   Fn:
-  - '&studio_unlock'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - F1
   - F2
   - F3
