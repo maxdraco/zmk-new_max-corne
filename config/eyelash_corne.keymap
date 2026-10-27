@@ -323,7 +323,7 @@
         layer_fn: layer_fn {
             compatible = "keypaw,rgb-overlay";
             condition = <&cond_fn>;
-            keys = <0 1 2 3 4 5 7 8 9 10 11 12 15 16 17 18 22 23 24 25 26 27 29 31 33 38 39 40 41>;
+            keys = <1 2 3 4 5 7 8 9 10 11 12 15 16 17 18 22 23 24 25 26 27 29 31 33 38 39 40 41>;
 
             fx_fn {
                 compatible = "keypaw,rgb-matrix-solid";
@@ -423,7 +423,7 @@
         layer_3 {
             display-name = "Fn";
             bindings = <
-&studio_unlock  &kp F1      &kp F2     &kp F3       &kp F4     &kp F5                                  &mmv MOVE_UP                     &kp F6       &kp F7     &kp F8       &kp F9      &kp F10          &kp F11
+&none          &kp F1      &kp F2     &kp F3       &kp F4     &kp F5                                  &mmv MOVE_UP                     &kp F6       &kp F7     &kp F8       &kp F9      &kp F10          &kp F11
 &trans          &trans      &mkp LCLK  &mkp MCLK    &mkp RCLK  &mkp MB4                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &bootloader  &mkp LCLK  &mkp MCLK    &mkp RCLK   &kp PRINTSCREEN  &kp F12
 &trans          &sys_reset  &trans     &bootloader  &trans     &mkp MB5  &kp C_MUTE                    &mmv MOVE_DOWN                   &trans       &trans     &bootloader  &sys_reset  &kp SCROLLLOCK   &kp PAUSE_BREAK
                                        &trans       &trans     &trans                                                                   &trans       &trans     &trans
