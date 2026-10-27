@@ -40,6 +40,8 @@
             compatible = "keypaw,behavior-rgb-matrix";
             #binding-cells = <2>;
             initial-effect = <0>;
+            // Must be set: the module reads an absent boolean as false (off)
+            initial-on;
 
             // QWERTY stays dark; the layer overlays below do the lighting
             fx_off: fx_off {
